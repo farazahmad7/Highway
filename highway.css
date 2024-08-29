@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1f1;
+    color: rgb(17, 17, 17);
+    background-image: url("bg pic.jpg");
+    background-repeat: no-repeat;
+height: 780px;
+background-position: center;
+background-size: 100%;
+
+    
+}
+header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+#logo {
+    height: 60px;
+}
+
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+    margin-left: 2%;
+    font-size: 30px;
+    font-family: Bell MT;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li {
+   display: block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+   color: rgb(255, 255, 255);
+   box-shadow: 0 0 20px rgba(41, 11, 214, 0.753),
+               0 0 30px rgba(32, 14, 197, 0.89),
+               0 0 40px  rgba(9, 27, 185, 0.863);
+            
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section#home {
+    background-color: #ffc107;
+    color: white;
+    margin-top: 53%;
+    font-size: 25px
+}
+
+section#products {
+    background-color: rgba(76, 245, 217, 0.747);
+    transition: background-color 0.3s ease-in-out;
+}
+
+section#products:hover {
+    background-color: #f8f9fa;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.product-card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(28, 147, 194, 0.911);
+}
+
+section#about, section#contact {
+    background-color: #f0d43448;
+}
+
+footer {
+    background-color: #28a745;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+blockquote {
+    font-style: italic;
+    color: #c71c1c;
+}
+.search {
+    display: flex;
+    align-items: center;
+    margin-top: 20%;
+    position: absolute;
+   margin-left: 75%;
+}
+
+.search input {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    
+}
+.search button {
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search button:hover {
+    background-color: #ebecf3;
+}
